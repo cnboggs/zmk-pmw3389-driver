@@ -3,3 +3,4 @@ zephyr_library()
 
 add_subdirectory_ifdef(CONFIG_PMW3610 pixart/pmw3610)
 add_subdirectory_ifdef(CONFIG_PMW3360 pixart/pmw3360)
+add_subdirectory_ifdef(CONFIG_PMW3389 pixart/pmw3389)
