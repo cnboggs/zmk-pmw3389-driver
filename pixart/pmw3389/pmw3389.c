@@ -471,6 +471,8 @@ static int pmw3389_async_init_fw_load_continue(const struct device *dev) {
     /* Write SROM file into SROM_Load_Burst register.
      * Data must start with SROM_Load_Burst address.
      */
+    LOG_INF("Firmware length: %d", pmw3389_firmware_length);
+    LOG_INF("Second byte of firmware: 0x%x", pmw3389_firmware_data[1]);
     err = burst_write(dev, PMW3389_REG_SROM_LOAD_BURST, pmw3389_firmware_data,
                       pmw3389_firmware_length);
     if (err) {
