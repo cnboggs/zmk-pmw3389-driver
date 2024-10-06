@@ -19,13 +19,13 @@ extern "C" {
 #endif
 
     /* Timings defined by spec (in us) */
-#define T_NCS_SCLK 1                    /* 120 ns (rounded to 1us?)*/
-#define T_SRX (20 - T_NCS_SCLK)         /* 20 us */
-#define T_SCLK_NCS_WR (35 - T_NCS_SCLK) /* 35 us */
-#define T_SWX (180 - T_SCLK_NCS_WR)     /* 180 us */
+#define T_NCS_SCLK 1                    /* 120 ns (rounded to 1us)*/
+#define T_SRX 20                        /* 20 us */
+#define T_SCLK_NCS_WR 35                /* 35 us */
+#define T_SWX  180                      /* 180 us */
 #define T_SRAD 160                      /* 160 us */
 #define T_SRAD_MOTBR 35                 /* 35 us */
-#define T_BEXIT 1                       /* 500 ns (rounded to 1us?)*/
+#define T_BEXIT 1                       /* 500 ns (rounded to 1us)*/
 
 /* Timing defined on SROM download burst mode figure */
 #define T_BRSEP 15 /* 15 us */
